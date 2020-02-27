@@ -1,6 +1,0 @@
-version: '0.6.1'
-description: 'The backend app is the official app to develop, configure and maintain your API.'
-screenshot: 'https://raw.githubusercontent.com/apioo/fusio/master/doc/_static/backend.png'
-website: 'https://github.com/apioo/fusio-backend'
-downloadUrl: 'https://codeload.github.com/chay22/dev-fusio-backend/legacy.zip/src-release'
-sha1Hash: 'e59fa3227fd4cf73daec2135cedfb402ce2ce517'

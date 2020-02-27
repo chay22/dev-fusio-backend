@@ -12,12 +12,12 @@
 #   sha1Hash: 'string'    < sha1 hash of the zip file
 #
 fusio:
-  version: '0.6.1'
+  version: '0.6.2'
   description: 'The backend app is the official app to develop, configure and maintain your API.'
   screenshot: 'https://raw.githubusercontent.com/apioo/fusio/master/doc/_static/backend.png'
   website: 'https://github.com/apioo/fusio-backend'
-  downloadUrl: 'https://codeload.github.com/chay22/dev-fusio-backend/legacy.zip/src-release'
-  sha1Hash: 'e59fa3227fd4cf73daec2135cedfb402ce2ce517'
+  downloadUrl: 'https://raw.githubusercontent.com/chay22/dev-fusio-backend/release/chay-fusio.zip'
+  sha1Hash: '04e878c18f11cafb69107dfdb30e813211be2071'
 developer:
   version: '0.2'
   description: 'The developer app is designed to quickly setup an API program where new developers can register and create/manage their apps.'

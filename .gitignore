@@ -1,1 +1,12 @@
 /node_modules
+/app
+/css
+/js
+/tests
+.env
+.travis.yml
+Gruntfile.js
+package-lock.json
+package.json
+README.md
+server.php

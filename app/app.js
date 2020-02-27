@@ -138,6 +138,7 @@ fusioApp.config(['cfpLoadingBarProvider', function (cfpLoadingBarProvider) {
 
 fusioApp.run(function ($rootScope, $window, $location, $http, helpLoader, version, tokenParser) {
   var token = $window.sessionStorage.getItem('fusio_access_token')
+
   if (token) {
     var user = tokenParser.decode(token)
     if (user) {
@@ -186,11 +187,13 @@ fusioApp.run(function ($rootScope, $window, $location, $http, helpLoader, versio
       title: 'Routes',
       icon: 'glyphicon-road',
       path: '/routes'
-    }, {
-      title: 'Action',
-      icon: 'glyphicon-transfer',
-      path: '/action'
-    }, {
+    },
+    // {
+    //   title: 'Action',
+    //   icon: 'glyphicon-transfer',
+    //   path: '/action'
+    // },
+    {
       title: 'Schema',
       icon: 'glyphicon-list-alt',
       path: '/schema'
@@ -201,7 +204,7 @@ fusioApp.run(function ($rootScope, $window, $location, $http, helpLoader, versio
     }]
   }, {
     title: 'Consumer',
-    visible: false,
+    visible: true,
     children: [{
       title: 'App',
       icon: 'glyphicon-book',
@@ -229,7 +232,7 @@ fusioApp.run(function ($rootScope, $window, $location, $http, helpLoader, versio
     }]
   }, {
     title: 'Analytics',
-    visible: false,
+    visible: true,
     children: [{
       title: 'Log',
       icon: 'glyphicon-briefcase',
@@ -249,7 +252,7 @@ fusioApp.run(function ($rootScope, $window, $location, $http, helpLoader, versio
     }]
   }, {
     title: 'Monetization',
-    visible: false,
+    visible: true,
     children: [{
       title: 'Plan',
       icon: 'glyphicon-hdd',
@@ -269,20 +272,23 @@ fusioApp.run(function ($rootScope, $window, $location, $http, helpLoader, versio
     }]
   }, {
     title: 'System',
-    visible: false,
+    visible: true,
     children: [{
       title: 'Marketplace',
       icon: 'glyphicon-shopping-cart',
       path: '/marketplace'
-    }, {
-      title: 'Event',
-      icon: 'glyphicon-retweet',
-      path: '/event'
-    }, {
-      title: 'Cronjob',
-      icon: 'glyphicon-time',
-      path: '/cronjob'
-    }, {
+    },
+    // {
+    //   title: 'Event',
+    //   icon: 'glyphicon-retweet',
+    //   path: '/event'
+    // },
+    // {
+    //   title: 'Cronjob',
+    //   icon: 'glyphicon-time',
+    //   path: '/cronjob'
+    // },
+    {
       title: 'Import',
       icon: 'glyphicon-import',
       path: '/import'

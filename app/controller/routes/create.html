@@ -11,8 +11,8 @@
         <div class="form-group">
             <label for="path">Path:</label>
             <input type="text" id="path" ng-model="route.path" aria-describedby="pathHelp" class="form-control">
-            <span class="help-block" id="pathHelp">Path of the API endpoint i.e. <code>/acme/news</code>. It is possible 
-            to use variable path fragments i.e. <code>/acme/:news</code>. Click 
+            <span class="help-block" id="pathHelp">Path of the API endpoint i.e. <code>/acme/news</code>. It is possible
+            to use variable path fragments i.e. <code>/acme/:news</code>. Click
             <a ng-click="help.showDialog('help/routes.md#path')">here</a> for more informations</span>
         </div>
         <div class="form-group">
@@ -26,7 +26,7 @@
                     <label>Status:</label>
                     <select class="form-control" ng-model="version.status" ng-disabled="true" ng-options="status.key as status.value for status in statuuus" aria-describedby="statusHelp">
                     </select>
-                    <span class="help-block" id="statusHelp">The status of the API endpoint for this version. For more information about the impact 
+                    <span class="help-block" id="statusHelp">The status of the API endpoint for this version. For more information about the impact
                     click <a ng-click="help.showDialog('help/routes.md#status')">here</a></span>
                 </div>
                 <uib-tabset active="indexMethod[indexVersion]">
@@ -106,7 +106,7 @@
                             </div>
                             <span class="help-block" id="responsesHelp">The allowed format for outgoing responses. The <code>Passthru</code> schema forwards all outgoing data unfiltered to the client</span>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="display: none !important;">
                             <label>Action:</label>
                             <div class="row">
                                 <div class="col-md-11">

@@ -10,7 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusio</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="dist/fusio.min.css" rel="stylesheet" media="screen">
     <script src="dist/fusio.min.js"></script>
     <script type="text/javascript">
@@ -41,7 +43,7 @@
         <h1>Fusio <span>({{version}})</span></h1>
         <div ng-repeat="item in nav">
             <a class="fusio-navigation-heading" ng-click="changeNavHeading(item)" ng-class="{'fusio-navigation-heading-active': item.visible}">{{item.title}}</a>
-            <ul class="nav nav-pills nav-stacked ng-hide" ng-show="item.visible">
+            <ul class="nav nav-pills nav-stacked">
                 <li ng-repeat="child in item.children"><a ng-href="#!{{child.path}}"><span class="glyphicon {{child.icon}}" aria-hidden="true"></span> {{child.title}}</a></li>
             </ul>
         </div>

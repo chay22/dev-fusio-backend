@@ -26,7 +26,7 @@ developer:
   downloadUrl: 'https://www.fusio-project.org/files/developer.zip'
   sha1Hash: 'a48ffa3482eddc495f684d454279f6be29a724f4'
 documentation:
-  version: '0.2.1'
+  version: '0.2.2'
   description: 'The documentation app simply provides an overview of all available endpoints. It is possible to export the API definition into other schema formats like i.e. OpenAPI.'
   screenshot: 'https://raw.githubusercontent.com/apioo/fusio/master/doc/_static/documentation.png'
   website: 'https://github.com/chay22/evid-fusio'

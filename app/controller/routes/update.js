@@ -144,11 +144,14 @@ module.exports = function ($scope, $http, $uibModal, $uibModalInstance, $timeout
         $scope.indexMethod = indexMethod
       })
     })
+  $scope.actions = [{
+    id: 1, status, 1, name: 'Default', date: '2020-02-26T10:29:22+08:00'
+  }]
 
-  $http.get(fusio.baseUrl + 'backend/action?count=1024')
-    .then(function (response) {
-      $scope.actions = response.data.entry
-    })
+  // $http.get(fusio.baseUrl + 'backend/action?count=1024')
+  //   .then(function (response) {
+  //     $scope.actions = response.data.entry
+  //   })
 
   $http.get(fusio.baseUrl + 'backend/schema?count=1024')
     .then(function (response) {

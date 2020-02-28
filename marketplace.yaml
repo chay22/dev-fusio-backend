@@ -30,7 +30,7 @@ documentation:
   description: 'The documentation app simply provides an overview of all available endpoints. It is possible to export the API definition into other schema formats like i.e. OpenAPI.'
   screenshot: 'https://raw.githubusercontent.com/apioo/fusio/master/doc/_static/documentation.png'
   website: 'https://github.com/chay22/evid-fusio'
-  downloadUrl: 'https://raw.githubusercontent.com/chay22/evid-fusio/blob/release/dist/documentation.zip'
+  downloadUrl: 'https://raw.githubusercontent.com/chay22/evid-fusio/release/dist/documentation.zip'
   sha1Hash: '403e2020efd7c89668a95a5c8d4cbfb2c5ed0399'
 swagger-ui:
   version: '0.1'
